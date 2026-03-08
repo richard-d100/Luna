@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Luna
 
-## Getting Started
+Dieses Projekt ist für ein einfaches und kostenloses Hosting über **Vercel** vorbereitet.
 
-First, run the development server:
+## Lokale Entwicklung
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Die Seite ist dann unter [http://localhost:3000](http://localhost:3000) erreichbar.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deployment auf Vercel (Kostenlos)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Dieses Projekt ist direkt mit GitHub und Vercel kompatibel. Folge diesen einfachen Schritten, um die Seite live zu schalten:
 
-## Learn More
+1. **GitHub Repository erstellen**: Erstelle ein neues, leeres Repository auf [GitHub](https://github.com/new).
+2. **Code pushen**: Pushe den lokalen Code in dein neues Repository.
+   ```bash
+   git add .
+   git commit -m "Initial commit"
+   git branch -M main
+   git remote add origin https://github.com/DEIN_USERNAME/DEIN_REPO_NAME.git
+   git push -u origin main
+   ```
+3. **Bei Vercel anmelden**: Gehe zu [Vercel](https://vercel.com) und melde dich mit deinem GitHub-Konto an.
+4. **Projekt importieren**:
+   - Klicke im Vercel-Dashboard auf **"Add New..."** -> **"Project"**.
+   - Wähle das gerade erstellte GitHub-Repository aus und klicke auf **"Import"**.
+5. **Deployen**:
+   - Du musst keine Einstellungen ändern. Vercel erkennt automatisch, dass es sich um ein Next.js Projekt handelt.
+   - Klicke einfach auf **"Deploy"**.
 
-To learn more about Next.js, take a look at the following resources:
+Nach wenigen Sekunden ist deine Website online! Vercel weist dir automatisch eine kostenlose `.vercel.app` Domain zu (z.B. `luna.vercel.app`), die du jederzeit durch eine eigene Domain ersetzen kannst.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Sobald du zukünftig Änderungen am Code machst und diese auf GitHub pushst (mit `git push`), aktualisiert Vercel deine Website vollautomatisch.
