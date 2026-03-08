@@ -80,13 +80,14 @@ export default function Home() {
             </ScrollReveal>
           </div>
 
-          <ScaleIn delay={0.2} duration={0.8} className="relative h-[500px] sm:h-[600px] lg:h-[750px] w-full rounded-[2.5rem] overflow-hidden block">
-            <div className="absolute inset-0 bg-slate-100/50 rounded-[2.5rem] -z-10" />
+          <ScaleIn delay={0.2} duration={0.8} className="relative h-[500px] sm:h-[600px] lg:h-[750px] w-full block">
+            {/* Subtle glow behind the transparent 3D render to make it pop, acting like spatial environment */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-gradient-to-tr from-primary/10 via-pink-500/5 to-transparent rounded-full blur-3xl -z-10" />
             <Image 
-              src="/images/hero-premium.png" 
+              src="/Unbenannt.png" 
               alt="Premium 3D Illustration Luna Taxi" 
               fill 
-              className="object-contain object-center relative z-10 transition-transform duration-1000 md:scale-110"
+              className="object-contain object-center relative z-10 transition-transform duration-1000 md:scale-105 hover:scale-110 drop-shadow-2xl"
               priority
             />
             
